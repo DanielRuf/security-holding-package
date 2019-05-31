@@ -1,0 +1,11 @@
+{
+  "name": "security-holding-package",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "install": "node index.js"
+  },
+  "repository": "git@github.com:DanielRuf/security-holding-package.git",
+  "author": "Daniel Ruf <daniel@daniel-ruf.de>"
+}
