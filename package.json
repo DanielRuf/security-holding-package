@@ -1,6 +1,6 @@
 {
   "name": "security-holding-package",
-  "description": "This is a better security holding process which stops the installation of insecure packages",
+  "description": "This is a better security holding package which stops the installation of insecure packages",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",

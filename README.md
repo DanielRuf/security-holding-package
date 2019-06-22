@@ -1,3 +1,3 @@
 # security-holding-package
 
-This is a better security holding process which stops the installation of insecure packages
+This is a better security holding package which stops the installation of insecure packages.
