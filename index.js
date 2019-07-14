@@ -4,11 +4,17 @@ const supportsColors = typeof process.stdout.hasColors !== 'undefined'
     ? process.stdout.hasColors()
     : false;
 
-if(supportsColors) {
-    console.error(`\x1b[31m${pkg.name} is not a real package - aborting process due to security concerns.\x1b[0m`);
-} else {
-    console.error(`${pkg.name} is not a real package - aborting process due to security concerns.`);
+const COLOR = {
+    RED: '',
+    RESET: ''
 }
+
+if(supportsColors) {
+    COLOR.RED = "\x1b[31m";
+    COLOR.RESET = "\x1b[0m";
+}
+
+console.error(`${COLOR.RED}${pkg.name} is not a real package - aborting process due to security concerns.${COLOR.RESET}`);
 
 process.kill(process.pid, 'SIGKILL');
 process.exit(1);
