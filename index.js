@@ -14,7 +14,9 @@ if(supportsColors) {
     COLOR.RESET = "\x1b[0m";
 }
 
-console.error(`${COLOR.RED}${pkg.name} is not a real package - aborting process due to security concerns.${COLOR.RESET}`);
+const MESSAGE = `${pkg.name} is not a real package - aborting process due to security concerns.`;
+
+console.error(`${COLOR.RED}${MESSAGE}${COLOR.RESET}`);
 
 process.kill(process.pid, 'SIGKILL');
 process.exit(1);
